@@ -40,7 +40,7 @@ class CalendarsController < ApplicationController
         wday_num = wday_num - 7
       end
 
-      days = { :month => (@todays_date + x).month, :date => (@todays_date+x).day, :plans => today_plans, :wday => wdays[wday_num]}
+      days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: today_plans, wday: wdays[wday_num]}
       #  wdays[0] 日曜日
       # Date.today.wdayの値は0 日曜日の場合
 
